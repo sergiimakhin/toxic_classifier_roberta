@@ -1,0 +1,11 @@
+MAX_LEN = 256  # Increased for better context
+BATCH_SIZE = 8   # Reduced for stability
+EPOCHS = 3       # Reduced to prevent overfitting
+LEARNING_RATE = 1e-5  # Reduced learning rate
+MODEL_NAME = "roberta-base"
+DEVICE = "cuda"
+MODEL_PATH = "model/toxic_roberta.pt"
+THRESHOLD = 0.5
+WARMUP_RATIO = 0.1  # Add warmup
+WEIGHT_DECAY = 0.01  # Add regularization
+MAX_GRAD_NORM = 1.0  # Add gradient clipping
